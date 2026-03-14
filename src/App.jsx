@@ -8,7 +8,7 @@ function App() {
     <div>
       <HeroSection />
 
-      <main>
+      <main className="px-6 py-24 flex flex-col gap-24 text-base leading-base">
         <AboutSection />
         <CreationsSection />
       </main>
