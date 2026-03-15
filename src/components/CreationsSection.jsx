@@ -2,20 +2,20 @@ import CreationsItem from "./CreationsItem.jsx";
 
 function CreationsSection() {
   const creations = [
-    { title: "Deep earth", imgUrl: "image-deep-earth.jpg" },
-    { title: "Night arcade", imgUrl: "image-night-arcade.jpg" },
-    { title: "Soccer team VR", imgUrl: "image-soccer-team.jpg" },
-    { title: "The grid", imgUrl: "image-grid.jpg" },
-    { title: "From up above VR", imgUrl: "image-from-above.jpg" },
-    { title: "Pocket borealis", imgUrl: "image-pocket-borealis.jpg" },
-    { title: "The curiosity", imgUrl: "image-curiosity.jpg" },
-    { title: "Make it fisheye", imgUrl: "image-fisheye.jpg" },
+    { title: "Deep\nearth", imgFile: "image-deep-earth.jpg" },
+    { title: "Night\narcade", imgFile: "image-night-arcade.jpg" },
+    { title: "Soccer\nteam VR", imgFile: "image-soccer-team.jpg" },
+    { title: "The\ngrid", imgFile: "image-grid.jpg" },
+    { title: "From up\nabove VR", imgFile: "image-from-above.jpg" },
+    { title: "Pocket\nborealis", imgFile: "image-pocket-borealis.jpg" },
+    { title: "The\ncuriosity", imgFile: "image-curiosity.jpg" },
+    { title: "Make it\nfisheye", imgFile: "image-fisheye.jpg" },
   ];
 
   return (
-    <section className="flex flex-col items-center gap-8">
-      <div>
-        <h2 className="uppercase font-josefin font-light text-[32px] leading-[100%] mb-12">Our creations</h2>
+    <section className="flex flex-col items-center gap-8 w-full">
+      <div className="w-full">
+        <h2 className="uppercase font-josefin font-light text-[32px] leading-[100%] text-center mb-12">Our creations</h2>
         
         <div className="flex flex-col gap-6">
           {creations.map(item => (
