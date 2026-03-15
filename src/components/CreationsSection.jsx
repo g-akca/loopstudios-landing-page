@@ -15,7 +15,14 @@ function CreationsSection() {
   return (
     <section className="flex flex-col items-center gap-8 w-full">
       <div className="w-full">
-        <h2 className="uppercase font-josefin font-light text-[32px] leading-[100%] text-center mb-12">Our creations</h2>
+        <h2 
+          className="
+            uppercase font-josefin font-light text-[32px] leading-[100%] text-center 
+            mb-12 tablet:text-5xl tablet:mb-8
+          "
+        >
+          Our creations
+        </h2>
         
         <div className="flex flex-col gap-6">
           {creations.map(item => (

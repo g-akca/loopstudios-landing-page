@@ -11,6 +11,7 @@ function CreationsItem({ title, imgFile }) {
           absolute top-13 left-5 
           font-josefin text-white font-light text-2xl leading-[100%] 
           uppercase whitespace-pre-line
+          tablet:left-9.5
         "
       >
         {title}
