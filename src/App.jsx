@@ -8,7 +8,7 @@ function App() {
     <div>
       <HeroSection />
 
-      <main className="px-6 py-24 flex flex-col gap-24 text-base leading-base">
+      <main className="px-6 py-24 flex flex-col items-center gap-24 text-base leading-base tablet:px-20">
         <AboutSection />
         <CreationsSection />
       </main>
