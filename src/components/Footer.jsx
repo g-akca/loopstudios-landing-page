@@ -3,6 +3,7 @@ import facebookIcon from "/images/icon-facebook.svg";
 import twitterIcon from "/images/icon-twitter.svg";
 import pinterestIcon from "/images/icon-pinterest.svg";
 import instagramIcon from "/images/icon-instagram.svg";
+import NavList from "./NavList.jsx";
 
 function Footer() {
   return (
@@ -16,13 +17,7 @@ function Footer() {
       <div className="flex flex-col gap-10 mb-10 tablet:gap-6 tablet:m-0">
         <img src={logo} alt="Loopstudios logo" className="h-6 w-36" />
 
-        <ul className="text-white text-center flex flex-col gap-4 tablet:flex-row">
-          <li>About</li>
-          <li>Careers</li>
-          <li>Events</li>
-          <li>Products</li>
-          <li>Support</li>
-        </ul>
+        <NavList />
       </div>
 
       <div className="flex flex-col gap-4 tablet:gap-6">
