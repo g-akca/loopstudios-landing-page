@@ -13,7 +13,7 @@ function CreationsSection() {
   ];
 
   return (
-    <section className="flex flex-col items-center gap-8 w-full">
+    <section className="flex flex-col items-center gap-8 w-full max-w-220">
       <div className="w-full">
         <h2 
           className="
