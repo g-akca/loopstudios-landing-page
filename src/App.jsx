@@ -13,7 +13,7 @@ function App() {
     <div>
       <HeroSection openMenu={() => setMenuOpen(true)} />
 
-      {menuOpen && <Menu closeMenu={() => setMenuOpen(false)} />}
+      <Menu isOpen={menuOpen} closeMenu={() => setMenuOpen(false)} />
 
       <main className="px-6 py-24 flex flex-col items-center gap-24 text-base leading-base tablet:px-20 desktop:p-40">
         <AboutSection />

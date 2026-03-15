@@ -1,9 +1,17 @@
 import logo from "/images/logo.svg";
 import closeIcon from "/images/icon-close.svg";
 
-function Menu({ closeMenu }) {
+function Menu({ isOpen, closeMenu }) {
   return (
-    <div className="fixed inset-0 bg-black text-white flex flex-col gap-40 px-6 py-10 z-50">
+    <div
+      aria-hidden={!isOpen}
+      className={`
+        fixed inset-0 bg-black text-white flex flex-col gap-40 px-6 py-10 z-50
+        tablet:px-20 tablet:py-16 tablet:gap-34
+        transform transition-transform duration-300 ease-in-out
+        ${isOpen ? "translate-x-0" : "translate-x-full pointer-events-none"}
+      `}
+    >
       <div className="h-6 flex justify-between items-center">
         <img src={logo} alt="Loopstudios logo" className="h-full" />
 
