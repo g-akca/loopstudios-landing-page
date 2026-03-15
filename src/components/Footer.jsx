@@ -17,10 +17,18 @@ function Footer() {
 
         <div className="flex flex-col gap-4 tablet:gap-6">
           <ul className="h-6 flex justify-center items-center gap-4 tablet:justify-end">
-            <li><img src={facebookIcon} alt="Facebook icon" /></li>
-            <li><img src={twitterIcon} alt="Twitter icon" /></li>
-            <li><img src={pinterestIcon} alt="Pinterest icon" /></li>
-            <li><img src={instagramIcon} alt="Instagram icon" /></li>
+            <li><a href="#" className="relative after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-2 after:w-0 after:h-0.5 after:bg-white after:transition-all hover:after:w-6">
+              <img src={facebookIcon} alt="Facebook icon" />
+            </a></li>
+            <li><a href="#" className="relative after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-2 after:w-0 after:h-0.5 after:bg-white after:transition-all hover:after:w-6">
+              <img src={twitterIcon} alt="Twitter icon" />
+            </a></li>
+            <li><a href="#" className="relative after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-2 after:w-0 after:h-0.5 after:bg-white after:transition-all hover:after:w-6">
+              <img src={pinterestIcon} alt="Pinterest icon" />
+            </a></li>
+            <li><a href="#" className="relative after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-2 after:w-0 after:h-0.5 after:bg-white after:transition-all hover:after:w-6">
+              <img src={instagramIcon} alt="Instagram icon" />
+            </a></li>
           </ul>
 
           <p className="text-white opacity-50 text-center">© 2021 Loopstudios. All rights reserved.</p>
