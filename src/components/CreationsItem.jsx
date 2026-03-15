@@ -24,7 +24,7 @@ function CreationsItem({ title, imgFile }) {
           font-josefin font-light text-2xl leading-[100%] 
           uppercase whitespace-pre-line
           text-white group-hover:text-black
-          tablet:left-9.5
+          tablet:left-9.5 desktop:text-[32px]
         "
       >
         {title}
