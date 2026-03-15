@@ -2,7 +2,7 @@ import interactiveImg from "/images/mobile/image-interactive.jpg";
 
 function AboutSection() {
   return (
-    <section>
+    <section className="flex flex-col items-center">
       <img src={interactiveImg} alt="Person wearing VR goggles" />
 
       <div className="pt-12 px-6 flex flex-col gap-4 text-center">
