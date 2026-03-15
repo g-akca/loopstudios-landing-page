@@ -3,7 +3,7 @@ import hamburgerIcon from "/images/icon-hamburger.svg";
 
 function Header() {
   return (
-    <header className="flex justify-between items-center h-6">
+    <header className="flex justify-between items-center h-6 tablet:h-8">
       <img src={logo} alt="Loopstudios logo" className="h-full" />
 
       <button className="h-4 cursor-pointer">
