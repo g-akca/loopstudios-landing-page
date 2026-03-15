@@ -15,23 +15,20 @@ function CreationsSection() {
   return (
     <section className="flex flex-col items-center gap-8 w-full max-w-277.5">
       <div className="w-full">
-        <h2 
-          className="
-            uppercase font-josefin font-light text-[32px] leading-[100%] text-center 
-            mb-12 tablet:text-5xl tablet:mb-8
-          "
-        >
-          Our creations
-        </h2>
+        <div className="mb-12 tablet:mb-8 desktop:mb-20 flex justify-center items-center desktop:justify-between">
+          <h2 className="uppercase font-josefin font-light text-[32px] leading-[100%] text-center tablet:text-5xl">Our creations</h2>
+
+          <button type="button" className="border w-39.25 h-10 uppercase text-[14px] leading-[100%] tracking-[5px] hidden desktop:block">See all</button>
+        </div>
         
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 desktop:grid desktop:grid-cols-4 desktop:gap-8">
           {creations.map(item => (
             <CreationsItem key={item.title} {...item} />
           ))}
         </div>
       </div>
 
-      <button type="button" className="border w-39.25 h-10 uppercase text-[14px] leading-[100%] tracking-[5px]">See all</button>
+      <button type="button" className="border w-39.25 h-10 uppercase text-[14px] leading-[100%] tracking-[5px] desktop:hidden">See all</button>
     </section>
   )
 }
